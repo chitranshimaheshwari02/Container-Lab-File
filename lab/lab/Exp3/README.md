@@ -113,3 +113,14 @@ All screenshots captured during experiment execution are attached below:
 •⁠  ⁠Container Run Commands
 •⁠  ⁠Browser Output for Ports 8080, 8081, 8082
 •⁠  ⁠Docker PS Output
+
+<img width="899" height="743" alt="Screenshot 2026-02-07 at 9 27 28 AM" src="https://github.com/user-attachments/assets/503021ca-8c72-448e-9f6b-5eb199944208" />
+
+<img width="753" height="518" alt="Screenshot 2026-02-07 at 9 28 11 AM" src="https://github.com/user-attachments/assets/068ee2aa-5fd2-44ee-a052-24ff9df7a52b" />
+
+<img width="837" height="480" alt="Screenshot 2026-02-07 at 9 28 23 AM" src="https://github.com/user-attachments/assets/358ad383-9e8a-4942-8419-a5deb4b3a70e" />
+
+<img width="850" height="84" alt="Screenshot 2026-02-07 at 9 28 33 AM" src="https://github.com/user-attachments/assets/5d553b82-6dba-4516-bb13-c08ea4883c74" />
+
+<img width="1069" height="575" alt="Screenshot 2026-02-07 at 9 28 46 AM" src="https://github.com/user-attachments/assets/ee7e0163-2501-4c9e-9d92-d7b041716f71" />
+
