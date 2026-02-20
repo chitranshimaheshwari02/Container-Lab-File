@@ -105,8 +105,6 @@ We performed basic container lifecycle operations including:
 
 This experiment helped in understanding the foundational concepts of containerization and Docker usage in DevOps workflows.
 
-![WhatsApp Image 2026-01-26 at 18 24 25](https://github.com/user-attachments/assets/45eb9fdb-7c34-4425-8362-6d01a2eae19d)
-
 <img width="1470" height="956" alt="Screenshot 2026-01-31 at 8 59 38 AM" src="https://github.com/user-attachments/assets/f62bb17c-a52d-4cb8-9c02-9f210f4d376d" />
 
 <img width="1470" height="956" alt="1" src="https://github.com/user-attachments/assets/4d338995-1e19-4796-8544-2790267865d9" />
