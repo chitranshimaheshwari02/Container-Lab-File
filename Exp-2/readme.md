@@ -1,7 +1,10 @@
 ### Step 1: Verify Docker Installation
 
 To ensure Docker is installed correctly, the following command was executed:
+
+```bash
 docker --version
+```
 
 #### Output:
 This command displays the installed Docker version, confirming successful installation.
@@ -12,6 +15,9 @@ This command displays the installed Docker version, confirming successful instal
 
 To verify Docker configuration and system details:
 
+```bash
+docker info
+```
 
 #### Output:
 Displays:
@@ -40,10 +46,21 @@ docker pull nginx
 #### Verification:
 Check downloaded images:
 
+```bash
+docker images
+```
+
+This lists all available Docker images.
+
+---
 
 ### Step 4: Run Docker Container with Port Mapping
 
 To run the NGINX container:
+
+```bash
+docker run -d -p 8080:80 --name mynginx nginx
+```
 
 #### Explanation:
 - `-d` → Run container in detached mode
@@ -57,6 +74,9 @@ To run the NGINX container:
 
 Check running containers:
 
+```bash
+docker ps
+```
 
 #### Output:
 Displays running container details:
@@ -72,6 +92,10 @@ Displays running container details:
 
 Open browser and visit:
 
+```
+http://localhost:8080
+```
+
 If successful, the NGINX welcome page appears, confirming the container is running correctly.
 
 ---
@@ -80,16 +104,51 @@ If successful, the NGINX welcome page appears, confirming the container is runni
 
 To stop the container:
 
+```bash
+docker stop mynginx
+```
+
+---
 
 ### Step 8: Remove Container
 
 After stopping, remove the container:
 
+```bash
+docker rm mynginx
+```
+
+---
+
 ### Step 9: Remove Docker Image
 
 To delete the downloaded image:
 
+```bash
+docker rmi nginx
+```
 
+If error occurs (image in use), ensure container is removed first.
+
+---
+
+## Output Screenshots
+
+(Add your screenshots here)
+
+Example:
+
+```markdown
+## Output Screenshots
+
+![Docker Version](images/docker-version.png)
+
+![Docker Images](images/docker-images.png)
+
+![NGINX Output](images/nginx-browser.png)
+```
+
+---
 
 ## Conclusion
 
@@ -104,6 +163,8 @@ We performed basic container lifecycle operations including:
 - Removing images  
 
 This experiment helped in understanding the foundational concepts of containerization and Docker usage in DevOps workflows.
+
+## Screenshots
 
 <img width="1470" height="956" alt="Screenshot 2026-01-31 at 8 59 38 AM" src="https://github.com/user-attachments/assets/f62bb17c-a52d-4cb8-9c02-9f210f4d376d" />
 
