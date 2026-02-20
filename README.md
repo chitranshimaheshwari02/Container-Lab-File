@@ -25,47 +25,47 @@ This DevOps-focused experiment presents a comparative study of Virtual Machines 
 
 🔗 Link: Experiment 1 — Virtual Machines vs Containers (https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Exp-1/index.md)
 
-Experiment 2 — Docker Installation & Container Lifecycle
+## Experiment 2 — Docker Installation & Container Lifecycle
 
-This experiment introduces the core concepts and practical usage of Docker, including:
+## This experiment introduces the core concepts and practical usage of Docker, including:
 
-Pulling Docker images from repositories
+- Pulling Docker images from repositories
 
-Running containers with port mapping
+- Running containers with port mapping
 
-Accessing and verifying services via a web browser
+- Accessing and verifying services via a web browser
 
-Handling and resolving port conflicts
+- Handling and resolving port conflicts
 
-Managing the container lifecycle (start, stop, remove commands)
+- Managing the container lifecycle (start, stop, remove commands)
 
 🔗 Link: Experiment 2 — Docker Installation & Container Lifecycle (https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Exp-2/index.md)
 
-Experiment 3 — Custom Docker Images (Ubuntu & Alpine-Based NGINX)
+## Experiment 3 — Custom Docker Images (Ubuntu & Alpine-Based NGINX)
 
-This experiment demonstrates how to build and deploy custom Docker images using different Linux base distributions while running NGINX inside containers.
+## This experiment demonstrates how to build and deploy custom Docker images using different Linux base distributions while running NGINX inside containers.
 
-Base Images Used:
+- Base Images Used:
 
-Ubuntu 22.04
+- Ubuntu 22.04
 
-Alpine Linux
+- Alpine Linux
 
-Key learning outcomes include:
+- Key learning outcomes include:
 
-Writing Dockerfiles for custom image creation
+- Writing Dockerfiles for custom image creation
 
-Installing and configuring NGINX inside containers
+- Installing and configuring NGINX inside containers
 
-Building Docker images with custom tags
+- Building Docker images with custom tags
 
-Running multiple containers using different port mappings
+- Running multiple containers using different port mappings
 
-Comparing image size and performance between Ubuntu and Alpine
+- Comparing image size and performance between Ubuntu and Alpine
 
-Understanding optimization using lightweight container images
+- Understanding optimization using lightweight container images
 
-Implementation Details:
+- Implementation Details:
 
 Official NGINX container → Port 8080
 
