@@ -130,25 +130,6 @@ docker rmi nginx
 
 If error occurs (image in use), ensure container is removed first.
 
----
-
-## Output Screenshots
-
-(Add your screenshots here)
-
-Example:
-
-```markdown
-## Output Screenshots
-
-![Docker Version](images/docker-version.png)
-
-![Docker Images](images/docker-images.png)
-
-![NGINX Output](images/nginx-browser.png)
-```
-
----
 
 ## Conclusion
 
