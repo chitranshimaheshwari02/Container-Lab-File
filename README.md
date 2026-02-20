@@ -23,7 +23,7 @@ This DevOps-focused experiment presents a comparative study of Virtual Machines 
 
 - Architectural differences in terms of isolation, resource utilization, and performance
 
-🔗 Link: Experiment 1 — Virtual Machines vs Containers (https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Exp-1/index.md)
+🔗 Link: [Experiment 1 — Virtual Machines vs Containers](./Exp-1/)
 
 ## Experiment 2 — Docker Installation & Container Lifecycle
 
@@ -39,7 +39,7 @@ This DevOps-focused experiment presents a comparative study of Virtual Machines 
 
 - Managing the container lifecycle (start, stop, remove commands)
 
-🔗 Link: Experiment 2 — Docker Installation & Container Lifecycle (https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Exp-2/index.md)
+🔗 Link: [Experiment 2 — Docker Installation & Container Lifecycle](./Exp-2/)
 
 ## Experiment 3 — Custom Docker Images (Ubuntu & Alpine-Based NGINX)
 
@@ -73,4 +73,4 @@ Ubuntu-based custom container → Port 8081
 
 Alpine-based custom container → Port 8082
 
-🔗 Link: Experiment 3 — Custom Docker Images (Ubuntu & Alpine Based NGINX) (https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Exp-3/index.md)
+🔗 Link: [Experiment 3 — Custom Docker Images (Ubuntu & Alpine Based NGINX)](./Exp-3/)
