@@ -1,70 +1,76 @@
-# Experiment 1: VM vs Containers using Ubuntu & Nginx
+Lab Experiments Included
+## Experiment 1 — Virtual Machines vs Containers
 
-## Objective
-The objective of this experiment is to understand, implement, and compare:
-• Virtual Machines using VirtualBox and Vagrant  
-• Containers using Docker  
-by deploying an Nginx web server and observing resource utilization.
+This DevOps-focused experiment presents a comparative study of Virtual Machines and Containers using the following technologies:
 
----
+- Ubuntu
 
-## System Requirements
+- VirtualBox
 
-### Hardware
-• 64-bit system with virtualization support  
-• Minimum 4 GB RAM (8 GB recommended)  
-• Internet connection  
+- Vagrant
 
-### Software
-• macOS  
-• Oracle VirtualBox  
-• Vagrant  
-• Ubuntu Vagrant Box  
-• Docker Engine  
+- Docker
 
----
+- Nginx
 
-## Part A: Virtual Machine Setup using Vagrant
+### The experiment highlights:
 
-### Step 1: Install Homebrew
+- Infrastructure provisioning techniques
 
+- VM-based deployment processes
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
- Containers both have their place in modern infrastructure. However, containers are preferred in cloud-native and DevOps environments due to their speed, efficiency, and portability.
+- Containerized application execution
 
-### Step 2: Install VirtualBox
+- Architectural differences in terms of isolation, resource utilization, and performance
 
-brew install --cask virtualbox
+🔗 Link: Experiment 1 — Virtual Machines vs Containers (https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Exp-1/index.md)
 
-### Step 3: Install Vagrant
+Experiment 2 — Docker Installation & Container Lifecycle
 
-brew install --cask vagrant
+This experiment introduces the core concepts and practical usage of Docker, including:
 
-### Step 4: Verify Installation
+Pulling Docker images from repositories
 
-vagrant --version
-virtualbox --help
+Running containers with port mapping
 
-### Step 5: Create Project Directory
+Accessing and verifying services via a web browser
 
-mkdir vm-lab
-cd vm-lab
+Handling and resolving port conflicts
 
-### Step 6: Initialize Vagrant with Ubuntu Box
+Managing the container lifecycle (start, stop, remove commands)
 
-vagrant init ubuntu/jammy64
+🔗 Link: Experiment 2 — Docker Installation & Container Lifecycle (https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Exp-2/index.md)
 
-### Step 7: Start the Virtual Machine
+Experiment 3 — Custom Docker Images (Ubuntu & Alpine-Based NGINX)
 
-vagrant up
+This experiment demonstrates how to build and deploy custom Docker images using different Linux base distributions while running NGINX inside containers.
 
-### Error Observed
+Base Images Used:
 
-The box 'ubuntu/jammy64' could not be found or does not support the provider 'virtualbox'.
+Ubuntu 22.04
 
-This box requires the following providers:
-    vmware_desktop
+Alpine Linux
 
-Your system supports the following providers:
-    virtualbox
+Key learning outcomes include:
 
+Writing Dockerfiles for custom image creation
+
+Installing and configuring NGINX inside containers
+
+Building Docker images with custom tags
+
+Running multiple containers using different port mappings
+
+Comparing image size and performance between Ubuntu and Alpine
+
+Understanding optimization using lightweight container images
+
+Implementation Details:
+
+Official NGINX container → Port 8080
+
+Ubuntu-based custom container → Port 8081
+
+Alpine-based custom container → Port 8082
+
+🔗 Link: Experiment 3 — Custom Docker Images (Ubuntu & Alpine Based NGINX) (https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Exp-3/index.md)
