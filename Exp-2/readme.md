@@ -1,3 +1,5 @@
+# Experiment 2: Docker Installation, Configuration, and Running Images
+
 ### Step 1: Verify Docker Installation
 
 To ensure Docker is installed correctly, the following command was executed:
