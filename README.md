@@ -74,3 +74,34 @@ Ubuntu-based custom container → Port 8081
 Alpine-based custom container → Port 8082
 
 🔗 Link: [Experiment 3 — Custom Docker Images (Ubuntu & Alpine Based NGINX)](./Exp-3/)
+
+
+## Experiment 4 — Docker Swarm and Container Orchestration
+
+This experiment demonstrates how to initialize and manage a Docker Swarm cluster for container orchestration using Docker’s built-in clustering feature.
+
+- Technologies Used:
+
+- Docker Swarm Mode  
+- Docker Services  
+- Overlay Networks  
+
+- Key learning outcomes include:
+
+- Initializing Docker Swarm  
+- Understanding Manager and Worker nodes  
+- Generating and using join tokens  
+- Deploying services in Swarm mode  
+- Scaling services across replicas  
+- Inspecting Swarm cluster status  
+- Understanding orchestration concepts like load balancing and high availability  
+
+- Implementation Details:
+
+Docker Swarm initialized → `docker swarm init`  
+Manager node verification → `docker info`  
+Service deployment → `docker service create`  
+Scaling services → `docker service scale`  
+Service inspection → `docker service ls`  
+
+🔗 Link: [Experiment 4 — Docker Essentials Dockerfile Dockerignoring tagging and plublishing](./Exp-4/)
