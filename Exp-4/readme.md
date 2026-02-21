@@ -31,17 +31,6 @@ The objective of this experiment is to:
 
 ---
 
-## Project Structure
-
-my-flask-app/
-│
-├── app.py
-├── requirements.txt
-├── Dockerfile
-└── README.md
-
----
-
 ## Step 1: Create Flask Application
 
 Create `app.py`:
