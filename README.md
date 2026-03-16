@@ -105,3 +105,8 @@ Scaling services → `docker service scale`
 Service inspection → `docker service ls`  
 
 🔗 Link: [Experiment 4 — Docker Essentials Dockerfile Dockerignoring tagging and plublishing](./Exp-4/)
+
+
+## Assignment 1
+
+Link: [ Assignment 1 - Containerized Web Application with PostgreSQL using Docker Compose and Macvlan/Ipvlan](https://github.com/chitranshimaheshwari02/container-project/blob/main/README.md)
