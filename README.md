@@ -113,6 +113,7 @@ Link: [ Assignment 1 - Containerized Web Application with PostgreSQL using Docke
 
 
 ## Class Assignment
-link :
+Link : [Class Assignment - Kubernetes Pod & Deployment Experiment] (https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Class_assignments/Task)
+
 
 
