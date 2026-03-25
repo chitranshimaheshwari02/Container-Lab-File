@@ -110,3 +110,9 @@ Service inspection → `docker service ls`
 ## Assignment 1
 
 Link: [ Assignment 1 - Containerized Web Application with PostgreSQL using Docker Compose and Macvlan/Ipvlan](https://github.com/chitranshimaheshwari02/container-project/blob/main/README.md)
+
+
+## Class Assignment
+link :
+
+
