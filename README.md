@@ -117,3 +117,14 @@ Link : [Class Assignment - Kubernetes Pod & Deployment Experiment] (https://gith
 
 
 
+## Experiment 5 — Docker Volumes, Environment Variables, Monitoring & Network
+This experiment demonstrates how to manage Docker container storage using volumes and bind mounts, configure environment variables, monitor container performance, and work with Docker networking for container communication.
+
+Technologies Used:
+Docker Volumes
+Bind Mounts
+Docker Networking (Bridge, Host, Custom Networks)
+Docker Stats (Monitoring)
+Environment Variables
+
+Link : [Experiment 5 — Docker Volumes, Environment Variables, Monitoring Networks Final] (./Exp-5/)
