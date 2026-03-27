@@ -6,17 +6,17 @@ A practical walkthrough of Docker storage (volumes, bind mounts) and networking 
 
 ## Table of Contents
 
-1. [Container Storage Basics](#1-container-storage-basics)
-2. [Docker Volumes](#2-docker-volumes)
-3. [Bind Mounts](#3-bind-mounts)
-4. [Real-World Example: MySQL Persistence](#4-real-world-example-mysql-persistence)
-5. [Nginx with Config Bind Mount](#5-nginx-with-config-bind-mount)
-6. [Volume Management](#6-volume-management)
-7. [Copying Files into Containers](#7-copying-files-into-containers)
-8. [Docker Networking](#8-docker-networking)
-9. [Custom Bridge Networks](#9-custom-bridge-networks)
-10. [Container Stats & Monitoring](#10-container-stats--monitoring)
-11. [Environment Variables](#11-environment-variables)
+1. [Container Storage Basics]
+2. [Docker Volumes]
+3. [Bind Mounts]
+4. [Real-World Example: MySQL Persistence]
+5. [Nginx with Config Bind Mount]
+6. [Volume Management]
+7. [Copying Files into]
+8. [Docker Networking]
+9. [Custom Bridge Networks]
+10. [Container Stats & Monitoring]
+11. [Environment Variables]
 
 ---
 
