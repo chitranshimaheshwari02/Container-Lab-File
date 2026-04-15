@@ -128,3 +128,22 @@ Docker Stats (Monitoring)
 Environment Variables
 
 Link : [Experiment 5 — Docker Volumes, Environment Variables, Monitoring Networks Final](./Exp-5/)
+
+
+## Experiment 9 - Ansible 
+This experiment demonstrates provisioning and configuration management using Ansible on macOS, combined with a Dockerized Ubuntu SSH server as a managed node — a lightweight local lab for practicing infrastructure automation.
+
+What This Does
+
+Installs and configures Ansible on macOS via Homebrew
+Sets up SSH key-based authentication
+Spins up an Ubuntu 24.04 container over Docker with an SSH server
+Connects to the container via Ansible for automated management
+
+Tech Stack
+Ansible 2.20.4       Configuration management
+Docker               Containerized Ubuntu SSH target
+Ubuntu 24.04 LTS     Managed node OS
+Open SSH             Secure remote access
+
+Link : [Experiment 9 - Ansible](./Exp-9)
