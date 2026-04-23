@@ -1,65 +1,146 @@
-### Docker Python Runtime
-A lightweight Docker environment for running Python applications with NumPy support — ideal for scientific computing, data processing, and reproducible runtime environments.
+# Docker Python Runtime
 
-### Project Structure
-docker-python-runtime
-├── app.py        
-└── Dockerfile    
+> Run a Python app inside Docker by attaching it at container runtime — no rebuild needed when your code changes.
 
-### Prerequisites
+---
 
-Docker Desktop installed and running
-Basic familiarity with the terminal
+## Project Structure
 
+```
+docker-python-runtime/
+├── app.py          # Your Python application
+└── Dockerfile      # Docker image definition
+```
 
-### Getting Started
-1. Clone or Set Up the Project
-bashmkdir docker-python-runtime
+---
+
+## Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+- Basic familiarity with the terminal
+
+---
+
+## Getting Started
+
+### Step 1 — Create the project folder
+
+```bash
+mkdir docker-python-runtime
 cd docker-python-runtime
-touch app.py
-touch Dockerfile
-2. Write Your Python App
-Edit app.py with your Python code. Example used in this project:
-pythonimport numpy as np
+touch app.py Dockerfile
+```
+
+---
+
+### Step 2 — Write the Python app
+
+Edit `app.py` with the following code:
+
+```python
+import numpy as np
 
 print("Python app is running inside Docker!")
 
 arr = np.array([1, 2, 3, 4])
 print("Numpy Array:", arr)
 print("Sum:", np.sum(arr))
-3. Define the Dockerfile
-dockerfileFROM docker.io/library/python:3.8-slim
+```
+
+---
+
+### Step 3 — Write the Dockerfile
+
+Edit `Dockerfile` with the following:
+
+```dockerfile
+FROM python:3.8-slim
 
 WORKDIR /home/app
 
 RUN pip install numpy
 
-Build the Docker Image
-bashdocker build -t sapid-checker-runtime:500119484 .
-What happens during the build:
+CMD ["python", "app.py"]
+```
 
-Pulls python:3.8-slim base image (~14.5 MB)
-Sets /home/app as the working directory
-Installs numpy via pip
+---
 
+### Step 4 — Build the image
 
-Build time: ~113 seconds on first run (cached on subsequent builds)
+Run this from inside your project folder:
 
+```bash
+docker build -t sapid-checker-runtime:500119484 .
+```
 
-Run the Container
-bashsudo docker run -it -v "$(pwd)/app.py:/home/app/app.py" sapid-checker-runtime:500119484
-Flag Breakdown
-FlagDescription-itInteractive terminal mode-v "$(pwd)/app.py:/home/app/app.py"Mounts your local app.py into the container
-Expected Output
+**What happens during the build:**
+
+- Pulls `python:3.8-slim` base image (~14.5 MB)
+- Sets `/home/app` as the working directory
+- Installs `numpy` via pip
+
+> Build time: ~113 seconds on first run. Subsequent builds use cache and are much faster.
+
+---
+
+### Step 5 — Check the image was created
+
+```bash
+docker images
+```
+
+You should see your image listed:
+
+```
+REPOSITORY              TAG          IMAGE ID
+sapid-checker-runtime   500119484    e2f10adad92b
+```
+
+---
+
+### Step 6 — Run the image and attach `app.py`
+
+```bash
+sudo docker run -it -v "$(pwd)/app.py:/home/app/app.py" sapid-checker-runtime:500119484
+```
+
+**Flag breakdown:**
+
+| Flag | Description |
+|------|-------------|
+| `-it` | Interactive terminal — keeps stdin open |
+| `-v "$(pwd)/app.py:/home/app/app.py"` | Mounts your local `app.py` into the container |
+
+---
+
+## Expected Output
+
+```
 Python app is running inside Docker!
 Numpy Array: [1 2 3 4]
 Sum: 10
+```
 
-### How It Works
+---
 
-A minimal Python 3.8 image is used as the base to keep the image size small.
-NumPy is installed at build time inside the image.
-At runtime, the local app.py is volume-mounted into the container — meaning you can edit the file locally and re-run without rebuilding the image.
+## How It Works
+
+The image is built **once** and contains Python + NumPy.  
+Your `app.py` lives **outside** the image and is mounted in at runtime using `-v`.  
+This means you can edit your Python code and re-run without ever rebuilding the image.
+
+---
+
+## Dependencies
+
+| Package | Version  | Installed via    |
+|---------|----------|------------------|
+| Python  | 3.8-slim | Base image       |
+| NumPy   | Latest   | pip (build time) |
+
+
+
+
 
 
 
