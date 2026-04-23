@@ -2,7 +2,7 @@
 A lightweight Docker environment for running Python applications with NumPy support — ideal for scientific computing, data processing, and reproducible runtime environments.
 
 ### Project Structure
-docker-python-runtime/
+docker-python-runtime
 ├── app.py        
 └── Dockerfile    
 
