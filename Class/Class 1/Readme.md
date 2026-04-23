@@ -1,18 +1,18 @@
-Docker Python Runtime
+### Docker Python Runtime
 A lightweight Docker environment for running Python applications with NumPy support — ideal for scientific computing, data processing, and reproducible runtime environments.
 
-Project Structure
+### Project Structure
 docker-python-runtime/
 ├── app.py        
 └── Dockerfile    
 
-Prerequisites
+### Prerequisites
 
 Docker Desktop installed and running
 Basic familiarity with the terminal
 
 
-Getting Started
+### Getting Started
 1. Clone or Set Up the Project
 bashmkdir docker-python-runtime
 cd docker-python-runtime
@@ -55,7 +55,7 @@ Python app is running inside Docker!
 Numpy Array: [1 2 3 4]
 Sum: 10
 
-How It Works
+### How It Works
 
 A minimal Python 3.8 image is used as the base to keep the image size small.
 NumPy is installed at build time inside the image.
