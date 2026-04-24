@@ -147,3 +147,24 @@ Ubuntu 24.04 LTS     Managed node OS
 Open SSH             Secure remote access
 
 Link : [Experiment 9 - Ansible](./Exp-9)
+
+
+## Experiment 10 - SonarQube
+This experiment demonstrates continuous code quality inspection using SonarQube on a local Docker-based lab — scanning a intentionally flawed Java application to detect bugs, vulnerabilities, and code smells through static analysis.
+
+**What This Does**
+- Spins up a SonarQube server and PostgreSQL database using Docker Compose
+- Sets up a sample Java application with deliberate code issues
+- Runs the SonarQube Scanner to perform static code analysis
+- Visualizes results on the SonarQube dashboard with quality gates and technical debt metrics
+
+**Tech Stack**
+```
+SonarQube LTS        Continuous code quality inspection
+PostgreSQL 13        Backend database for SonarQube
+Docker               Containerized SonarQube + DB environment
+Java (OpenJDK 17)    Language of the sample application
+SonarScanner CLI     Static analysis runner
+```
+
+**Link :** [Experiment 10 - SonarQube](./Exp-10)
