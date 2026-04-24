@@ -130,6 +130,31 @@ Environment Variables
 Link : [Experiment 5 — Docker Volumes, Environment Variables, Monitoring Networks Final](./Exp-5/)
 
 
+## Experiment 6 - Docker Run vs Docker Compose
+This experiment demonstrates the difference between imperative container management with `docker run` and declarative configuration using Docker Compose — progressing from single containers to multi-service apps and custom Dockerfile builds.
+
+**What This Does**
+- Compares `docker run` flags with their Docker Compose YAML equivalents
+- Deploys single and multi-container applications (Nginx, WordPress + MySQL) both ways
+- Converts given `docker run` commands into equivalent `docker-compose.yml` files
+- Builds custom images using Dockerfile with the `build:` option in Compose
+- Implements a multi-stage Dockerfile for a production-ready Python FastAPI app
+
+**Tech Stack**
+```
+Docker               Container runtime and CLI
+Docker Compose       Declarative multi-container orchestration
+Nginx                Single-container comparison target
+MySQL 5.7            Database service in multi-container setup
+WordPress            Frontend service in multi-container setup
+Node.js 18 Alpine    Custom image build target
+Python 3.11 Slim     Multi-stage production build target
+```
+
+**Link :** [Experiment 6 - Docker Run vs Docker Compose](./Exp-6)
+
+
+
 ## Experiment 9 - Ansible 
 This experiment demonstrates provisioning and configuration management using Ansible on macOS, combined with a Dockerized Ubuntu SSH server as a managed node — a lightweight local lab for practicing infrastructure automation.
 
