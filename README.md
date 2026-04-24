@@ -397,7 +397,10 @@ An in-class experiment covering **Kubernetes fundamentals** — creating Pods, w
 - Writes Deployment manifests for scalable, self-healing workloads
 - Explores Pod lifecycle, ReplicaSets, and rollout strategies
 
-🔗 **Link:** [Class Assignment — Kubernetes Pod & Deployment Experiment](https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Class_assignments/Task)
+ **Link:** [Class Assignment — Kubernetes Pod & Deployment Experiment](https://github.com/chitranshimaheshwari02/Container-Lab-File/blob/main/Class_assignments/Task)
 
 ---
 
+
+
+Link : [Class](https://github.com/chitranshimaheshwari02/Container-Lab-File/tree/main/Class/Class%201)
