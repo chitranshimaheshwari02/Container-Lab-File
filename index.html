@@ -383,6 +383,60 @@ footer {
 .fade:nth-child(8) { animation-delay: 0.46s; }
 .fade:nth-child(9) { animation-delay: 0.52s; }
  
+.practical-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+ 
+.practical-card {
+  background: var(--bg);
+  padding: 1.3rem 1.6rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  transition: background 0.2s;
+}
+ 
+.practical-card:hover { background: var(--bg2); }
+.practical-card:hover .exp-arrow { opacity: 1; }
+ 
+.practical-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+}
+ 
+.practical-label {
+  font-family: var(--display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+ 
+.practical-sub {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+ 
 @media (max-width: 640px) {
   nav { padding: 0 1.2rem; }
   .nav-links { gap: 1.2rem; }
@@ -400,6 +454,7 @@ footer {
   <ul class="nav-links">
     <li><a href="#experiments">Experiments</a></li>
     <li><a href="#assignments">Assignments</a></li>
+    <li><a href="#practicals">Practicals</a></li>
     <li><a href="#profile">Profile</a></li>
   </ul>
 </nav>
@@ -418,6 +473,11 @@ footer {
     <div class="stat">
       <div class="stat-num">9</div>
       <div class="stat-label">Experiments</div>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat">
+      <div class="stat-num">8</div>
+      <div class="stat-label">Class Practicals</div>
     </div>
     <div class="stat-div"></div>
     <div class="stat">
@@ -583,6 +643,89 @@ footer {
         </div>
       </div>
       <div class="assign-btn">View on GitHub ↗</div>
+    </a>
+ 
+  </div>
+</div>
+ 
+<div class="section" id="practicals">
+  <div class="section-head">
+    <span class="section-label">03</span>
+    <h2 class="section-title">Class Practicals</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="practical-grid">
+ 
+    <a class="practical-card fade" href="#">
+      <div class="exp-arrow">↗</div>
+      <div class="practical-num">01</div>
+      <div>
+        <div class="practical-label">Class Practical 1</div>
+        <div class="practical-sub">View practical</div>
+      </div>
+    </a>
+ 
+    <a class="practical-card fade" href="#">
+      <div class="exp-arrow">↗</div>
+      <div class="practical-num">02</div>
+      <div>
+        <div class="practical-label">Class Practical 2</div>
+        <div class="practical-sub">View practical</div>
+      </div>
+    </a>
+ 
+    <a class="practical-card fade" href="#">
+      <div class="exp-arrow">↗</div>
+      <div class="practical-num">03</div>
+      <div>
+        <div class="practical-label">Class Practical 3</div>
+        <div class="practical-sub">View practical</div>
+      </div>
+    </a>
+ 
+    <a class="practical-card fade" href="#">
+      <div class="exp-arrow">↗</div>
+      <div class="practical-num">04</div>
+      <div>
+        <div class="practical-label">Class Practical 4</div>
+        <div class="practical-sub">View practical</div>
+      </div>
+    </a>
+ 
+    <a class="practical-card fade" href="#">
+      <div class="exp-arrow">↗</div>
+      <div class="practical-num">05</div>
+      <div>
+        <div class="practical-label">Class Practical 5</div>
+        <div class="practical-sub">View practical</div>
+      </div>
+    </a>
+ 
+    <a class="practical-card fade" href="#">
+      <div class="exp-arrow">↗</div>
+      <div class="practical-num">06</div>
+      <div>
+        <div class="practical-label">Class Practical 6</div>
+        <div class="practical-sub">View practical</div>
+      </div>
+    </a>
+ 
+    <a class="practical-card fade" href="#">
+      <div class="exp-arrow">↗</div>
+      <div class="practical-num">07</div>
+      <div>
+        <div class="practical-label">Class Practical 7</div>
+        <div class="practical-sub">View practical</div>
+      </div>
+    </a>
+ 
+    <a class="practical-card fade" href="#">
+      <div class="exp-arrow">↗</div>
+      <div class="practical-num">08</div>
+      <div>
+        <div class="practical-label">Class Practical 8</div>
+        <div class="practical-sub">View practical</div>
+      </div>
     </a>
  
   </div>
