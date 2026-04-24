@@ -1,25 +1,7 @@
 # Container & DevOps Lab File
 
 > A comprehensive hands-on lab series covering Docker, Kubernetes, CI/CD, Ansible, and Code Quality tooling — from foundational concepts to production-grade pipelines.
-
----
-
-## Table of Contents
-
-- [Experiment 1 — Virtual Machines vs Containers](#experiment-1--virtual-machines-vs-containers)
-- [Experiment 2 — Docker Installation & Container Lifecycle](#experiment-2--docker-installation--container-lifecycle)
-- [Experiment 3 — Custom Docker Images (Ubuntu & Alpine-Based NGINX)](#experiment-3--custom-docker-images-ubuntu--alpine-based-nginx)
-- [Experiment 4 — Docker Swarm and Container Orchestration](#experiment-4--docker-swarm-and-container-orchestration)
-- [Experiment 5 — Docker Volumes, Environment Variables, Monitoring & Network](#experiment-5--docker-volumes-environment-variables-monitoring--network)
-- [Experiment 6 — Docker Run vs Docker Compose](#experiment-6--docker-run-vs-docker-compose)
-- [Experiment 7 — CI/CD using Jenkins, GitHub and Docker Hub](#experiment-7--cicd-using-jenkins-github-and-docker-hub)
-- [Experiment 9 — Ansible](#experiment-9--ansible)
-- [Experiment 10 — SonarQube](#experiment-10--sonarqube)
-- [Assignment 1 — Containerized Web App with PostgreSQL](#assignment-1--containerized-web-app-with-postgresql)
-- [Class Assignment — Kubernetes Pod & Deployment](#class-assignment--kubernetes-pod--deployment)
-
----
-
+> 
 ## Experiment 1 — Virtual Machines vs Containers
 
 A comparative study of **Virtual Machines** and **Containers** — exploring the fundamental architectural differences between the two approaches to application isolation and deployment.
