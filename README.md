@@ -382,7 +382,6 @@ Demonstrates **container orchestration and service scaling** using Docker Compos
 
  **Link:** [Experiment 11 — WordPress with Docker Compose & Swarm](./Exp-11)
 
-
 ## Assignment 1 — Containerized Web App with PostgreSQL
 
 A practical assignment deploying a **multi-container web application** backed by PostgreSQL, using Docker Compose for orchestration and Macvlan/IPvlan for advanced network configuration.
