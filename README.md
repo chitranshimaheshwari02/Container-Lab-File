@@ -382,6 +382,24 @@ Demonstrates **container orchestration and service scaling** using Docker Compos
 
  **Link:** [Experiment 11 — WordPress with Docker Compose & Swarm](./Exp-11)
 
+ ## Experiment 12 — Kubernetes Deployments & Services with k3d
+Demonstrates **container orchestration using Kubernetes** — setting up a local cluster with k3d, deploying a containerized Apache (httpd) application as a Pod, and inspecting the full workload lifecycle inside a Kubernetes environment.
+ 
+**What This Does**
+- Creates a local Kubernetes cluster using k3d (Kubernetes running inside Docker)
+- Verifies cluster health by inspecting nodes and control plane components
+- Deploys an Apache (httpd) container as a Kubernetes Pod
+- Inspects Pod scheduling, image pulling, and container lifecycle events
+ 
+**Key Concepts**
+- k3d as a lightweight local Kubernetes environment running inside Docker
+- Kubernetes control plane components: API server, CoreDNS, Metrics Server
+- Pod scheduling, node assignment, and container image pulling lifecycle
+- Pod conditions: `Initialized`, `PodScheduled`, `ContainerCreating`, `Running`
+
+**Link:** [Experiment 12 — Kubernetes Deployments & Services with k3d](./Exp-12)
+ 
+
 ## Assignment 1 — Containerized Web App with PostgreSQL
 
 A practical assignment deploying a **multi-container web application** backed by PostgreSQL, using Docker Compose for orchestration and Macvlan/IPvlan for advanced network configuration.
