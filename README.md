@@ -65,7 +65,7 @@ docker images                            # List local images
 - Container states: created, running, exited, removed
 - Handling `address already in use` port conflicts
 
-🔗 **Link:** [Experiment 2 — Docker Installation & Container Lifecycle](./Exp-2/)
+ **Link:** [Experiment 2 — Docker Installation & Container Lifecycle](./Exp-2/)
 
 ---
 
@@ -101,7 +101,7 @@ Nginx               Web server installed inside custom images
 - Alpine vs Ubuntu: size vs familiarity tradeoff
 - Tagging images: `docker build -t myimage:tag .`
 
-🔗 **Link:** [Experiment 3 — Custom Docker Images (Ubuntu & Alpine Based NGINX)](./Exp-3/)
+ **Link:** [Experiment 3 — Custom Docker Images (Ubuntu & Alpine Based NGINX)](./Exp-3/)
 
 ---
 
@@ -140,7 +140,7 @@ docker node ls                                     # List all nodes in the clust
 - Desired state reconciliation and automatic rescheduling
 - Load balancing and high availability across replicas
 
-🔗 **Link:** [Experiment 4 — Docker Essentials Dockerfile Dockerignoring tagging and publishing](./Exp-4/)
+ **Link:** [Experiment 4 — Docker Essentials Dockerfile Dockerignoring tagging and publishing](./Exp-4/)
 
 ---
 
@@ -181,7 +181,7 @@ docker network connect mynet mycontainer               # Attach container to net
 - Container resource limits and monitoring
 - DNS-based container discovery on custom networks
 
-🔗 **Link:** [Experiment 5 — Docker Volumes, Environment Variables, Monitoring Networks Final](./Exp-5/)
+ **Link:** [Experiment 5 — Docker Volumes, Environment Variables, Monitoring Networks Final](./Exp-5/)
 
 ---
 
@@ -231,7 +231,7 @@ services:
 - Service dependency ordering with `depends_on`
 - Shared networks and volumes in Compose
 
-🔗 **Link:** [Experiment 6 — Docker Run vs Docker Compose](./Exp-6)
+ **Link:** [Experiment 6 — Docker Run vs Docker Compose](./Exp-6)
 
 ---
 
@@ -267,7 +267,7 @@ Checkout → Build Image → Login to Docker Hub → Push Image → Cleanup
 - Docker-outside-of-Docker (DooD) via socket mounting
 - Credential management in Jenkins for secure registry login
 
-🔗 **Link:** [Experiment 7 — CI/CD using Jenkins, GitHub and Docker Hub](./Exp-7)
+ **Link:** [Experiment 7 — CI/CD using Jenkins, GitHub and Docker Hub](./Exp-7)
 
 ---
 
@@ -305,7 +305,7 @@ ansible-playbook -i inventory.ini playbook.yml     # Run a playbook
 - Playbooks: YAML-based automation scripts
 - Idempotency: running the same playbook multiple times safely
 
-🔗 **Link:** [Experiment 9 — Ansible](./Exp-9)
+ **Link:** [Experiment 9 — Ansible](./Exp-9)
 
 ---
 
@@ -353,9 +353,35 @@ sonar-scanner \
 - SQALE methodology for maintainability rating (A–E)
 - Static analysis vs runtime testing
 
-🔗 **Link:** [Experiment 10 — SonarQube](./Exp-10)
+ **Link:** [Experiment 10 — SonarQube](./Exp-10)
 
 ---
+
+## Experiment 11 — WordPress with Docker Compose & Docker Swarm
+Demonstrates **container orchestration and service scaling** using Docker Compose and Docker Swarm — deploying a WordPress + MySQL stack locally, then scaling it across replicas using Swarm's orchestration layer.
+
+**What This Does**
+- Deploys a WordPress application with a MySQL backend using Docker Compose
+- Migrates the stack to Docker Swarm for multi-replica orchestration
+- Scales the WordPress service to 3 replicas using a single command
+- Manages the full lifecycle: deploy, inspect, scale, and tear down
+
+**Scaling & Stack Commands**
+| Task | Command |
+|------|---------|
+| Start stack | `docker compose up -d` |
+| Deploy to Swarm | `docker stack deploy -c docker-compose.yml mystack` |
+| Scale replicas | `docker service scale mystack_wordpress=3` |
+| Remove stack | `docker stack rm mystack` |
+
+**Key Concepts**
+- Docker Compose vs Swarm: local dev vs orchestrated deployment
+- Service replicas and task convergence in Swarm mode
+- Named volumes for persistent DB and WordPress data
+- Port binding and conflict resolution across services
+
+ **Link:** [Experiment 11 — WordPress with Docker Compose & Swarm](./Exp-11)
+
 
 ## Assignment 1 — Containerized Web App with PostgreSQL
 
